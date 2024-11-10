@@ -24,7 +24,7 @@ export default function Header() {
                 {/* Logo Section */}
                 <div className="logo">
                     <h3><Image src="/logo.png" height={40} width={56} alt="logo" /></h3>
-                    <h1>Forniro</h1>
+                    <h1>Furniro</h1>
                 </div>
 
                 {/* Navigation Links */}
