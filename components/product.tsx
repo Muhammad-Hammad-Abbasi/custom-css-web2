@@ -182,10 +182,12 @@ export default function Our_Product() {
           </div>
         </div>
 
-         <div>
-          <Link href="/our-product"><button className="our-button">SHOW MORE</button></Link>
-         </div>
-         
+        <div>
+          <Link href="/our-product" style={{ textDecoration: 'none' }}>
+            <button className="our-button">SHOW MORE</button>
+          </Link>
+        </div>
+
       </div>
     </main>
   )

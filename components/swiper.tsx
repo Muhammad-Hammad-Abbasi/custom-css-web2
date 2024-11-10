@@ -16,26 +16,19 @@ export default function Swiper_img() {
             spaceBetween={20}
             slidesPerView={1}
             breakpoints={{
-                640: {
-                    slidesPerView: 1,  
-                },
-                768: {
-                    slidesPerView: 2,  
-                },
-                1024: {
-                    slidesPerView: 2,  
-                },
+                640: { slidesPerView: 1, spaceBetween: 10 },
+                768: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 2, spaceBetween: 20 },
             }}
             navigation 
-            className="image"
+            className="swiper-slider"
             loop={true}  
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             
         >
-            <SwiperSlide >
-                <Image
-                    
+            <SwiperSlide className='slide-padding'>
+                <Image                   
                     src="/slider-img7.png"
                     height={600}
                     width={350}
@@ -43,7 +36,7 @@ export default function Swiper_img() {
                 />
             </SwiperSlide>
 
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-img02.png"
                     height={600}
@@ -52,7 +45,7 @@ export default function Swiper_img() {
                 />
             </SwiperSlide>
 
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-img6.png"
                     height={600}
@@ -62,7 +55,7 @@ export default function Swiper_img() {
             </SwiperSlide>
 
             
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-img04.png"
                     height={600}
@@ -72,7 +65,7 @@ export default function Swiper_img() {
             </SwiperSlide>
 
             
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-img05.png"
                     height={600}
@@ -83,7 +76,7 @@ export default function Swiper_img() {
 
 
             
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-img03.png"
                     height={600}
@@ -93,7 +86,7 @@ export default function Swiper_img() {
             </SwiperSlide>
 
             
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-image-1.png"
                     height={600}
@@ -103,7 +96,7 @@ export default function Swiper_img() {
             </SwiperSlide>
 
             
-            <SwiperSlide>
+            <SwiperSlide className='slide-padding'>
                 <Image
                     src="/slider-img8.png"
                     height={600}

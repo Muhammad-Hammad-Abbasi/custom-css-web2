@@ -144,7 +144,9 @@ p {
     transition: ease-in-out;
     transition-duration: 1s;
     margin-top: 30px;
+    text-decoration: none; /* Ensure underline remove ho jaye */
 }
+
 
 .our-button:hover {
     background-color: #B88E2F;
@@ -181,6 +183,10 @@ p {
         grid-template-columns: repeat(2, 1fr);
 
     }
+
+    .our-button{
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 470px) {
@@ -196,5 +202,9 @@ p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .our-button{
+        text-decoration: none;
     }
 }

@@ -20,12 +20,6 @@ export default function Furniro() {
           <Image src="/furniro-img4.png" height={200} width={340} alt="Image 4" className="box align-top" />
         </div>
 
-
-        {/* Middle Section - Center Image */}
-        {/* <div className="image-section center">
-          <Image src="/furnirofurniturebg-img.png" height={250} width={200} alt="Center Image" />
-        </div> */}
-
         {/* Third Section - 4 Images */}
         <div className="image-section-last">
           <Image src="/furniro-img5.png" height={230} width={380} alt="Image 5" className="box" />
