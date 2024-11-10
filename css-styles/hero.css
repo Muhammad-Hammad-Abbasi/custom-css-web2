@@ -1,0 +1,81 @@
+
+
+.banner-container {
+    background-image: url('/banner.png');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center; 
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card {
+    background-color: #FFF3E3;
+    width: 550px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 100px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 50px;
+    color: #B88E2F;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    background-color: #B88E2F;
+    color: white;
+    padding: 30px 70px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 1s;
+}
+
+.buy-button:hover {
+    background-color: white;
+    color: #B88E2F;
+    border: 1px solid #B88E2F;
+}
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 570px) {
+
+
+    .card {
+        width: 350px;
+        height: 310px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .heading {
+        font-size: 35px;
+
+
+    }
+
+    .buy-button {
+        padding: 20px 60px;
+    }
+
+
+
+}

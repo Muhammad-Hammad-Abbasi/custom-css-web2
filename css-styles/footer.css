@@ -1,0 +1,148 @@
+footer {
+    font-family: sans-serif;
+    color: #000;
+}
+
+.footer-main {
+    border-top: 1px solid #000;
+    padding: 20px 10px;
+}
+
+.footer-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    gap: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.col-direction {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col-direction p {
+    text-decoration: underline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Subscription form styling */
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-input {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscribe-button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #444;
+}
+
+
+.social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.social-section h2 {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.bottom-bar {
+    width: 100%;
+    max-width: 700px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+
+.copy-right {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 470px) {
+    .nav-wrapper {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        grid-template-columns: 1fr; 
+        gap: 30px; 
+        text-align: left;
+        width: 100%;
+    }
+
+    .col-direction {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .subscribe-input {
+        width: 100%; 
+    }
+
+    .subscribe-button {
+        align-self: flex-start; 
+        width: auto; 
+    }
+}

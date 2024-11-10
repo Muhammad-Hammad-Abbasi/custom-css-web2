@@ -1,0 +1,105 @@
+/* General Reset */
+body, h1, h3, ul, li, a, button {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 50px;
+   
+    
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+/* Heading Styles */
+h3 {
+    height: 40px;
+    width: 50px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0 20px 0 90px;
+}
+
+/* Navigation Links */
+.links {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #B88E2F; 
+}
+
+/* Icons Styles */
+.icons {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.icons a {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #B88E2F;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+    header {
+        padding: 30px 20px ; 
+    }
+
+    nav {
+        display: none; 
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
