@@ -3,6 +3,7 @@
     background-color: #fff8f8;
     margin: 0 auto;
     overflow: hidden;
+    max-width: 100%;
 
 }
 
@@ -69,9 +70,9 @@
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 640px) {
     .slider-containor {
-        grid-template-columns: 1fr;
+        grid-template-columns:  1fr;
         gap: 2px;
     }
 
