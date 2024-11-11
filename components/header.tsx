@@ -32,7 +32,7 @@ export default function Header() {
                     <ul className="links">
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/our-product">Shop</Link></li>
-                        <li><Link href="/">Blog</Link></li>
+                        <li><Link href="/blog">Blog</Link></li>
                         <li><Link href="/">Contact</Link></li>
                     </ul>
 

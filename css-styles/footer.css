@@ -4,7 +4,7 @@ footer {
 }
 
 .footer-main {
-    border-top: 1px solid #000;
+    border-top: 2px solid #cccccc;
     padding: 20px 10px;
 }
 
@@ -47,7 +47,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Subscription form styling */
 .subscribe-form {
     display: flex;
     align-items: center;
@@ -75,7 +74,6 @@ footer {
     background-color: #444;
 }
 
-
 .social-section {
     display: flex;
     justify-content: center;
@@ -102,7 +100,7 @@ footer {
 .bottom-bar {
     width: 100%;
     max-width: 700px;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #cccccc;
     margin: 0 auto;
 }
 
@@ -112,18 +110,75 @@ footer {
     text-align: center;
 }
 
-@media (max-width: 470px) {
+/* Responsive Styles for smaller screens */
+
+@media (max-width: 1024px) {
+    .footer-title {
+        font-size: 40px; 
+    }
+
+    .nav-links {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .social-icons {
+        gap: 12px;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 30px; 
+    }
+
     .nav-wrapper {
-        padding: 10px;
         flex-direction: column;
-        align-items: flex-start;
+    }
+
+    .nav-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe-button {
+        width: 100%; 
+    }
+
+    .social-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copy-right {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .footer-title {
+        font-size: 25px;
     }
 
     .nav-links {
         grid-template-columns: 1fr; 
-        gap: 30px; 
-        text-align: left;
-        width: 100%;
+        gap: 20px;
+        
+    }
+
+    .nav-wrapper {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .col-direction {
@@ -138,11 +193,20 @@ footer {
     }
 
     .subscribe-input {
-        width: 100%; 
+        width: 100%;
     }
 
     .subscribe-button {
-        align-self: flex-start; 
-        width: auto; 
+        align-self: flex-start;
+        width: auto;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .copy-right {
+        font-size: 0.75rem; 
     }
 }

@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Our_Product_page() {
   return (
-    < div>
+    < div className="merriweather-light">
       <div className="adjust-image">
         <div className="custom-div">
           <h2>Shop</h2>
