@@ -1,4 +1,5 @@
 .adjust-image {
+    max-width: 1440px;
     background-image: url('/bg-pages.png');
     background-size: cover;
     background-position: center;
