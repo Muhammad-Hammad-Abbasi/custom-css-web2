@@ -38,58 +38,34 @@
 
 #first {
     padding: 20px;
-    width: 500px;
+    width: 540px;
 }
 
 #second {
     padding: 15px;
-    width: 740px;
+    width: 700px;
 }
 
 @media (max-width: 768px) {
     .slider-containor {
         grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        gap: 2px;
-    }
-
-    #first h3 {
-        font-size: 50px;
-        line-height: 60px;
-        font-weight: 1200;
-        display: inline;
-        color: rgb(49, 49, 49);
-
-    }
-
-    .swiper-slide {
-        padding: 5px;
-    }
-
-
-}
-
-@media (max-width: 640px) {
-    .slider-containor {
-        grid-template-columns:  1fr;
-        gap: 2px;
+        
     }
 
     #first h3 {
         font-size: 40px;
-        line-height: 60px;
-        font-weight: 1200;
-        display: inline;
-        color: rgb(49, 49, 49);
-
+        line-height: 1.2;
     }
-
-
-    #first {
-        padding: 20px;
-        width: 320px;
-        margin-right: 20px;
-    }
-
 }
+
+@media (max-width: 640px) {
+    .slider-containor {
+        grid-template-columns: 1fr;
+    }
+
+    #first h3 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+}
+
