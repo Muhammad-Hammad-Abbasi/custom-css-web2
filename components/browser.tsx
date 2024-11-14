@@ -52,4 +52,5 @@ export default function Browser_Range() {
             </div>
         </main>
     )
+
 }
